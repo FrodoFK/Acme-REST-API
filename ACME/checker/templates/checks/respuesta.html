@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ACME Code Checker</title>
+</head>
+<body>
+    <h2>Estado del código {{respuesta}}</h2>
+    {% if status == "Si"%}
+    <h3>No disponible, el código de descuento ya está usado</h3>
+    <a href="{% url 'index'%}">Verificador</a>
+    {% elif status == "no" or status == "No" %}
+    <h3>Disponible, el código está listo para ser utilizado</h3>>
+    <a href="{% url 'index'%}">Verificador</a>
+    {% else %}
+    <h3>El código ingresado no existe, por favor intente nuevamente</h3>
+    <a href="{% url 'index'%}">Intentar Otra Vez</a>
+    {% endif %}
+</body>
+</html>
