@@ -38,4 +38,4 @@ El Checker se encarga, como su nombre lo asoma, de verificar la existencia de un
 ### ACMEREST
 Es el REST API que se encarga del CRUD de los códigos y las empresas. 
 
-## Recuerde cambiar la 'secret key' con la función  _get_random_secret_key()_ incluida en Django
+### Recuerde cambiar la 'secret key' con la función  _get_random_secret_key()_ incluida en Django, luego cambiar la variable "SECRET_KEY" en el archivo settings.py de la carpeta del proyecto ("ACME")
